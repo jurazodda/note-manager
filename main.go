@@ -74,7 +74,7 @@ func createNote() {
 }
 
 func getNotes() {
-	fmt.Println("Your notes:")
+	fmt.Println("Notes:", notes)
 	for i := range notes {
 		fmt.Printf("ID: %d, Title: %s, Content: %s\n", notes[i].ID, notes[i].Title, notes[i].Content)
 	}
@@ -121,8 +121,7 @@ func updateNote() {
 				Title:   title,
 				Content: content,
 			}
-			nextID++
-			fmt.Println("Note updated")
+			fmt.Println("Note updated.")
 			fmt.Println()
 			return
 		}
@@ -133,7 +132,7 @@ func updateNote() {
 }
 
 func deleteNote() {
-	fmt.Println("Enter the ID of the note: ")
+	fmt.Print("Enter the ID of the note: ")
 	var noteID int
 	fmt.Scan(&noteID)
 
