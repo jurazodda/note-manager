@@ -1,1 +1,1 @@
-# todo-app
+# Note manager
